@@ -1,0 +1,23 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Sep 25 15:01:14 2021
+# Process ID: 20984
+# Current directory: D:/大二上數電實驗/Lab1/109550134_Lab_1
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2680 D:\大二上數電實驗\Lab1\109550134_Lab_1\109550134_Lab_1.xpr
+# Log file: D:/大二上數電實驗/Lab1/109550134_Lab_1/vivado.log
+# Journal file: D:/大二上數電實驗/Lab1/109550134_Lab_1\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/大二上數電實驗/Lab1/109550134_Lab_1/109550134_Lab_1.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Lab1/109550134_Lab_1' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'D:/大二上數電實驗/Lab1/109550134_Lab_1/109550134_Lab_1.gen/sources_1', nor could it be found using path 'D:/Lab1/109550134_Lab_1/109550134_Lab_1.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/vivado/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:24 ; elapsed = 00:00:12 . Memory (MB): peak = 1442.328 ; gain = 0.000
+exit
+INFO: [Common 17-206] Exiting Vivado at Sat Sep 25 15:02:27 2021...

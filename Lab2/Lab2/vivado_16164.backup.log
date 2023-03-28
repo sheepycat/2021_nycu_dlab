@@ -1,0 +1,81 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Oct  2 03:26:03 2021
+# Process ID: 16164
+# Current directory: C:/Users/Carrie Liang/Desktop/Lab2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1096 C:\Users\Carrie Liang\Desktop\Lab2\Lab2.xpr
+# Log file: C:/Users/Carrie Liang/Desktop/Lab2/vivado.log
+# Journal file: C:/Users/Carrie Liang/Desktop/Lab2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Carrie Liang/Desktop/Lab2/Lab2.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'C:/Users/Carrie Liang/Desktop/Lab2/Lab2.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [Common 17-41] Interrupt caught. Command should exit soon.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2338] Canceling the changes to the IP catalog. Reverting the catalog back to its previous state.
+INFO: [IP_Flow 19-2340] The IP catalog has been returnlaunch_simulation
+Command: launch_simulation 
+INFO: [Vivado 12-12493] Simulation top is 'mmult_tb'
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'C:/Users/Carrie Liang/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-72] Using boost library from 'D:/vivado/Vivado/2021.1/tps/boost_1_72_0'
+INFO: [SIM-utils-54] Inspecting design source files for 'mmult_tb' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'C:/Users/Carrie Liang/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xvlog --incr --relax -prj mmult_tb_vlog.prj"
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carrie Liang/Desktop/Lab2/Lab2.srcs/sources_1/new/mmult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mmult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carrie Liang/Desktop/Lab2/Lab2.srcs/sim_1/new/mmult_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mmult_tb
+WARNING: [VRFC 10-8361] illegal leading underscore character in based number '_4F_7E_57_0F_14_7B_21_4C_54' [C:/Users/Carrie Liang/Desktop/Lab2/Lab2.srcs/sim_1/new/mmult_tb.v:75]
+WARNING: [VRFC 10-8361] illegal leading underscore character in based number '_17_28_3A_40_2F_33_6C_22_77' [C:/Users/Carrie Liang/Desktop/Lab2/Lab2.srcs/sim_1/new/mmult_tb.v:76]
+INFO: [USF-XSim-69] 'compile' step finished in '3' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'C:/Users/Carrie Liang/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+"xelab -wto 11272bcd49ac46eb8f7919314aca4181 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mmult_tb_behav xil_defaultlib.mmult_tb xil_defaultlib.glbl -log elaborate.log"
+Vivado Simulator v2021.1
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: D:/vivado/Vivado/2021.1/bin/unwrapped/win64.o/xelab.exe -wto 11272bcd49ac46eb8f7919314aca4181 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L unisims_ver -L unimacro_ver -L secureip --snapshot mmult_tb_behav xil_defaultlib.mmult_tb xil_defaultlib.glbl -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Pass Through NonSizing Optimizer
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling module xil_defaultlib.mmult
+Compiling module xil_defaultlib.mmult_tb
+Compiling module xil_defaultlib.glbl
+Built simulation snapshot mmult_tb_behav
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 1459.465 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'C:/Users/Carrie Liang/Desktop/Lab2/Lab2.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "mmult_tb_behav -key {Behavioral:sim_1:Functional:mmult_tb} -tclbatch {mmult_tb.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Time resolution is 1 ps
+source mmult_tb.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+WARNING: Simulation object /mmult_tb/reset_trigger was not traceable in the design for the following reason:
+Vivado Simulator does not support tracing of event type object.
+# run 1000ns
+xsim: Time (s): cpu = 00:00:08 ; elapsed = 00:13:24 . Memory (MB): peak = 1459.465 ; gain = 0.000
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'mmult_tb_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:09 ; elapsed = 00:13:34 . Memory (MB): peak = 1459.465 ; gain = 0.000

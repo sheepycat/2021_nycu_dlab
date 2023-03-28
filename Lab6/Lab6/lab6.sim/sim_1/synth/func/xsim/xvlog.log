@@ -1,0 +1,3 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "/home/Alvinna/Desktop/lab6/lab6.sim/sim_1/synth/func/xsim/lab6_tb_func_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module lab6_tb
+INFO: [VRFC 10-311] analyzing module glbl

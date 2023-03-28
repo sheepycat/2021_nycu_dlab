@@ -1,0 +1,22 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Dec  5 14:13:53 2021
+# Process ID: 5688
+# Current directory: D:/109550134/lab9_frame/lab9_1204 _2
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7392 D:\109550134\lab9_frame\lab9_1204 _2\lab9.xpr
+# Log file: D:/109550134/lab9_frame/lab9_1204 _2/vivado.log
+# Journal file: D:/109550134/lab9_frame/lab9_1204 _2\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {D:/109550134/lab9_frame/lab9_1204 _2/lab9.xpr}
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/109550134/lab9_frame/lab9_1204 _2/lab9.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+open_project: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 1436.176 ; gain = 0.000
+update_compile_order -fileset sources_1
+open_hw_manager

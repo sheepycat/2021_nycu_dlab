@@ -1,0 +1,103 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Sun Nov 28 21:50:36 2021
+| Host         : DESKTOP-2TT0HVD running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file lab8_control_sets_placed.rpt
+| Design       : lab8
+| Device       : xc7a35ti
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    25 |
+|    Minimum number of control sets                        |    25 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    61 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    25 |
+| >= 0 to < 4        |     1 |
+| >= 4 to < 6        |     7 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     0 |
+| >= 14 to < 16      |     1 |
+| >= 16              |    10 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               4 |            3 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              37 |           14 |
+| Yes          | No                    | No                     |              46 |           15 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             356 |           90 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+-------------------------------------+----------------------------+------------------+----------------+--------------+
+|  Clock Signal  |            Enable Signal            |      Set/Reset Signal      | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+-------------------------------------+----------------------------+------------------+----------------+--------------+
+|  clk_sel_BUFG  | sd_card0/cs_reg_i_1_n_0             | sd_card0/reset0            |                1 |              1 |         1.00 |
+|  clk_IBUF_BUFG | lcd0/tcode[3]_i_1_n_0               |                            |                4 |              4 |         1.00 |
+|  clk_IBUF_BUFG | sd_card0/E[0]                       | sd_card0/P_reg[0][0]       |                1 |              4 |         4.00 |
+|  clk_IBUF_BUFG | lcd0/icode                          |                            |                1 |              4 |         4.00 |
+|  clk_sel_BUFG  |                                     |                            |                3 |              4 |         1.33 |
+|  clk_sel_BUFG  | sd_card0/return_state[3]_i_1_n_0    | sd_card0/reset0            |                2 |              4 |         2.00 |
+|  clk_IBUF_BUFG | row_A[123]_i_1_n_0                  | sd_card0/reset0            |                3 |              5 |         1.67 |
+|  clk_sel_BUFG  | sd_card0/c_state[4]_i_1_n_0         | sd_card0/reset0            |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG | lcd0/lcd_initialized_reg_n_0        | sd_card0/reset0            |                2 |              7 |         3.50 |
+|  clk_sel_BUFG  | sd_card0/recv_data_0                | sd_card0/reset0            |                2 |              7 |         3.50 |
+|  clk_sel_BUFG  | sd_card0/bit_counter                | sd_card0/reset0            |                4 |              8 |         2.00 |
+|  clk_sel_BUFG  | sd_card0/dout[7]_i_1_n_0            |                            |                1 |              8 |         8.00 |
+|  clk_sel_BUFG  | sd_card0/byte_counter[8]_i_1_n_0    | sd_card0/reset0            |                5 |              9 |         1.80 |
+|  clk_IBUF_BUFG | sd_card0/sd_valid_reg_0[0]          | sd_card0/SR[0]             |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG |                                     | sd_card0/reset0            |                8 |             15 |         1.88 |
+|  clk_IBUF_BUFG | sd_card0/char_counter               | sd_card0/reset0            |                4 |             16 |         4.00 |
+|  clk_IBUF_BUFG |                                     | btn_db0/clear              |                6 |             22 |         3.67 |
+|  clk_IBUF_BUFG | lcd0/lcd_initialized_reg_n_0        | lcd0/text_count[0]_i_1_n_0 |                7 |             25 |         3.57 |
+|  clk_IBUF_BUFG | row_A[123]_i_1_n_0                  |                            |                9 |             30 |         3.33 |
+|  clk_IBUF_BUFG | lcd0/init_e_i_2_n_0                 | sd_card0/reset0            |                7 |             32 |         4.57 |
+|  clk_IBUF_BUFG | blk_addr                            | sd_card0/reset0            |                8 |             32 |         4.00 |
+|  clk_sel_BUFG  | sd_card0/block_addr_reg[31]_i_1_n_0 | sd_card0/reset0            |                6 |             32 |         5.33 |
+|  clk_sel_BUFG  | sd_card0/R7_response                | sd_card0/reset0            |                8 |             40 |         5.00 |
+|  clk_sel_BUFG  | sd_card0/cmd_out[55]_i_1_n_0        | sd_card0/reset0            |               11 |             55 |         5.00 |
+|  clk_IBUF_BUFG | sd_card0/sd_valid_reg_0[0]          | sd_card0/reset0            |               13 |             64 |         4.92 |
++----------------+-------------------------------------+----------------------------+------------------+----------------+--------------+
+
+

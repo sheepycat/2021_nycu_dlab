@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Nov 21 15:54:15 2021
+# Process ID: 5072
+# Current directory: D:/109550134/LAB7/final_lab7/lab_7
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent5304 D:\109550134\LAB7\final_lab7\lab_7\lab_7.xpr
+# Log file: D:/109550134/LAB7/final_lab7/lab_7/vivado.log
+# Journal file: D:/109550134/LAB7/final_lab7/lab_7\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/109550134/LAB7/final_lab7/lab_7/lab_7.xpr
+update_compile_order -fileset sources_1

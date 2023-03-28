@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Dec 12 23:09:01 2021
+# Process ID: 10064
+# Current directory: D:/109550134/Lab10/lab10/lab10.runs/impl_1
+# Command line: vivado.exe -log lab10.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source lab10.tcl -notrace
+# Log file: D:/109550134/Lab10/lab10/lab10.runs/impl_1/lab10.vdi
+# Journal file: D:/109550134/Lab10/lab10/lab10.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source lab10.tcl -notrace

@@ -1,0 +1,218 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.1 (win64) Build 3247384 Thu Jun 10 19:36:33 MDT 2021
+| Date         : Sun Dec 12 23:10:05 2021
+| Host         : DESKTOP-2TT0HVD running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file lab10_control_sets_placed.rpt
+| Design       : lab10
+| Device       : xc7a35ti
+------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |   140 |
+|    Minimum number of control sets                        |   140 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |    87 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |   140 |
+| >= 0 to < 4        |     2 |
+| >= 4 to < 6        |     0 |
+| >= 6 to < 8        |     1 |
+| >= 8 to < 10       |     0 |
+| >= 10 to < 12      |     2 |
+| >= 12 to < 14      |     3 |
+| >= 14 to < 16      |     1 |
+| >= 16              |   131 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |             162 |           80 |
+| No           | No                    | Yes                    |               0 |            0 |
+| No           | Yes                   | No                     |              88 |           51 |
+| Yes          | No                    | No                     |             222 |          102 |
+| Yes          | No                    | Yes                    |               0 |            0 |
+| Yes          | Yes                   | No                     |             393 |          110 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++-------------------+-----------------------------------------+----------------------------+------------------+----------------+--------------+
+|    Clock Signal   |              Enable Signal              |      Set/Reset Signal      | Slice Load Count | Bel Load Count | Bels / Slice |
++-------------------+-----------------------------------------+----------------------------+------------------+----------------+--------------+
+|  clk_divider0/CLK |                                         |                            |                1 |              1 |         1.00 |
+|  clk_divider0/CLK |                                         | vs0/temp_rgb3              |                2 |              2 |         1.00 |
+|  clk_IBUF_BUFG    |                                         | vs0/temp_rgb3              |                4 |              6 |         1.50 |
+|  clk_divider0/CLK | vs0/h_count_next                        | vs0/v_count_reg[9]_i_1_n_0 |                3 |             10 |         3.33 |
+|  clk_divider0/CLK | vs0/pixel_tick                          | vs0/h_count_reg[9]_i_1_n_0 |                3 |             10 |         3.33 |
+|  clk_IBUF_BUFG    | a                                       |                            |                5 |             12 |         2.40 |
+|  clk_IBUF_BUFG    | temp_rgb[11]_i_1_n_0                    |                            |                7 |             12 |         1.71 |
+|  clk_IBUF_BUFG    | vs0/pixel_tick                          | vs0/SR[0]                  |                8 |             12 |         1.50 |
+|  clk_IBUF_BUFG    | vs0/v_count_reg_reg[9]_1                | vs0/reset_n_0[0]           |                4 |             15 |         3.75 |
+|  clk_IBUF_BUFG    | vs0/CEP                                 | vs0/reset_n                |                6 |             19 |         3.17 |
+|  clk_IBUF_BUFG    |                                         | btn_db1/clear              |                6 |             22 |         3.67 |
+|  clk_IBUF_BUFG    |                                         | btn_db0/clear              |                6 |             22 |         3.67 |
+|  clk_IBUF_BUFG    | sel                                     | d_clock0                   |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG    | sel                                     | fish_clock0                |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG    | sel                                     | fish_clock30               |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG    | x[0]_i_2_n_0                            | x[0]_i_1_n_0               |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG    | sel                                     | fish_clock40               |                8 |             32 |         4.00 |
+|  clk_IBUF_BUFG    |                                         | usr_btn_IBUF[3]            |               33 |             36 |         1.09 |
+|  clk_IBUF_BUFG    | sel                                     | fish_clock20               |               11 |             41 |         3.73 |
+|  clk_IBUF_BUFG    | sel                                     | d_clock20                  |               12 |             42 |         3.50 |
+|  clk_IBUF_BUFG    | sel                                     | fish_clock50               |               12 |             42 |         3.50 |
+|  clk_IBUF_BUFG    | sel                                     | fish_clock60               |               11 |             42 |         3.82 |
+|  clk_IBUF_BUFG    | ram4/RAM_reg_512_767_0_0_i_1__1_n_0     |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram4/RAM_reg_1792_2047_0_0_i_1__1_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram4/RAM_reg_1280_1535_0_0_i_1__1_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram4/RAM_reg_256_511_0_0_i_1__1_n_0     |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram4/RAM_reg_768_1023_0_0_i_1__1_n_0    |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_0_255_0_0_i_1_n_0          |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_10752_11007_0_0_i_1_n_0    |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_10240_10495_0_0_i_1_n_0    |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_1024_1279_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_10496_10751_0_0_i_1_n_0    |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_11776_12031_0_0_i_1_n_0    |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_12032_12287_0_0_i_1_n_0    |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_11264_11519_0_0_i_1_n_0    |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_11520_11775_0_0_i_1_n_0    |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_11008_11263_0_0_i_1_n_0    |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_12288_12543_0_0_i_1_n_0    |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_12544_12799_0_0_i_1_n_0    |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_12800_13055_0_0_i_1_n_0    |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_1280_1535_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_13312_13567_0_0_i_1_n_0    |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_13824_14079_0_0_i_1_n_0    |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_13056_13311_0_0_i_1_n_0    |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_14080_14335_0_0_i_1_n_0    |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_13568_13823_0_0_i_1_n_0    |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_14848_15103_0_0_i_1_n_0    |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_15104_15359_0_0_i_1_n_0    |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_14336_14591_0_0_i_1_n_0    |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_14592_14847_0_0_i_1_n_0    |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_16128_16383_0_0_i_1_n_0    |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_15616_15871_0_0_i_1_n_0    |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_15360_15615_0_0_i_1_n_0    |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_1536_1791_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_15872_16127_0_0_i_1_n_0    |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_2304_2559_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_256_511_0_0_i_1_n_0        |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_2048_2303_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_2560_2815_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_1792_2047_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_3328_3583_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_2816_3071_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_3072_3327_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_3584_3839_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_4096_4351_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_4352_4607_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_4608_4863_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_3840_4095_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_5376_5631_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_5120_5375_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_512_767_0_0_i_1_n_0        |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_5632_5887_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_4864_5119_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_6656_6911_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_6400_6655_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_6144_6399_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_5888_6143_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_7424_7679_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_6912_7167_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_768_1023_0_0_i_1_n_0       |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_7680_7935_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_7168_7423_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_8704_8959_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_7936_8191_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_8192_8447_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_8448_8703_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_8960_9215_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_9216_9471_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_9728_9983_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_9472_9727_0_0_i_1_n_0      |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram1/RAM_reg_9984_10239_0_0_i_1_n_0     |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram4/RAM_reg_0_255_0_0_i_1__1_n_0       |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram4/RAM_reg_1024_1279_0_0_i_1__1_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram4/RAM_reg_1536_1791_0_0_i_1__1_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_10496_10751_0_0_i_1__0_n_0 |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_1024_1279_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_10240_10495_0_0_i_1__0_n_0 |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_0_255_0_0_i_1__0_n_0       |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_10752_11007_0_0_i_1__0_n_0 |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_1280_1535_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_1792_2047_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_11008_11263_0_0_i_1__0_n_0 |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_1536_1791_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_2560_2815_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_256_511_0_0_i_1__0_n_0     |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_2304_2559_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_2048_2303_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_2816_3071_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_3072_3327_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_3584_3839_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_3328_3583_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_3840_4095_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_4608_4863_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_4864_5119_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_4352_4607_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_5120_5375_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_4096_4351_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_5632_5887_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_5376_5631_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_512_767_0_0_i_1__0_n_0     |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_5888_6143_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_6912_7167_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_7168_7423_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_6656_6911_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_6144_6399_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_6400_6655_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_768_1023_0_0_i_1__0_n_0    |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_7936_8191_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_7424_7679_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_7680_7935_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_8448_8703_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_9216_9471_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_8192_8447_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_8704_8959_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_8960_9215_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_9472_9727_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_9984_10239_0_0_i_1__0_n_0  |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    | ram2/RAM_reg_9728_9983_0_0_i_1__0_n_0   |                            |               12 |             48 |         4.00 |
+|  clk_IBUF_BUFG    |                                         |                            |               79 |            161 |         2.04 |
+|  clk_IBUF_BUFG    | vs0/v_count_reg_reg[9]_2                |                            |               90 |            198 |         2.20 |
++-------------------+-----------------------------------------+----------------------------+------------------+----------------+--------------+
+
+

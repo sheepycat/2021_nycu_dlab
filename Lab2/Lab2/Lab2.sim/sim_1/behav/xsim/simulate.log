@@ -1,0 +1,20 @@
+Time resolution is 1 ps
+
+Matrix A is:
+
+  79  126   87 
+  15   20  123 
+  33   76   84 
+
+Matrix B is:
+
+  23   40   58 
+  64   47   51 
+ 108   34  119 
+
+The result of C = A x B is:
+
+  19277   12040   21361 
+  14909    5722   16527 
+  14695    7748   15786 
+

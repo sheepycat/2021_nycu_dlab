@@ -1,0 +1,153 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sun Nov 28 20:14:11 2021
+# Process ID: 4828
+# Current directory: D:/109550134/LAB8/lab8_1128_2/lab8
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1788 D:\109550134\LAB8\lab8_1128_2\lab8\lab8.xpr
+# Log file: D:/109550134/LAB8/lab8_1128_2/lab8/vivado.log
+# Journal file: D:/109550134/LAB8/lab8_1128_2/lab8\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project D:/109550134/LAB8/lab8_1128_2/lab8/lab8.xpr
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory 'D:/109550134/LAB8/lab8_1128_2/lab8/lab8.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.
+update_compile_order -fileset sources_1
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210319A4375EA
+open_hw_target: Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 2705.141 ; gain = 1254.367
+set_property PROGRAM.FILE {D:/109550134/LAB8/lab8_1128_2/lab8/lab8.runs/impl_1/lab8.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/109550134/LAB8/lab8_1128_2/lab8/lab8.runs/impl_1/lab8.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Sun Nov 28 20:35:08 2021] Launched synth_1...
+Run output will be captured here: D:/109550134/LAB8/lab8_1128_2/lab8/lab8.runs/synth_1/runme.log
+[Sun Nov 28 20:35:08 2021] Launched impl_1...
+Run output will be captured here: D:/109550134/LAB8/lab8_1128_2/lab8/lab8.runs/impl_1/runme.log
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory D:/109550134/LAB8/lab8_1128_2/lab8/lab8.runs/synth_1
+
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Sun Nov 28 20:35:50 2021] Launched synth_1...
+Run output will be captured here: D:/109550134/LAB8/lab8_1128_2/lab8/lab8.runs/synth_1/runme.log
+[Sun Nov 28 20:35:50 2021] Launched impl_1...
+Run output will be captured here: D:/109550134/LAB8/lab8_1128_2/lab8/lab8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/109550134/LAB8/lab8_1128_2/lab8/lab8.runs/impl_1/lab8.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Sun Nov 28 20:39:35 2021] Launched impl_1...
+Run output will be captured here: D:/109550134/LAB8/lab8_1128_2/lab8/lab8.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Sun Nov 28 20:41:36 2021] Launched synth_1...
+Run output will be captured here: D:/109550134/LAB8/lab8_1128_2/lab8/lab8.runs/synth_1/runme.log
+[Sun Nov 28 20:41:36 2021] Launched impl_1...
+Run output will be captured here: D:/109550134/LAB8/lab8_1128_2/lab8/lab8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/109550134/LAB8/lab8_1128_2/lab8/lab8.runs/impl_1/lab8.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Sun Nov 28 20:45:54 2021] Launched impl_1...
+Run output will be captured here: D:/109550134/LAB8/lab8_1128_2/lab8/lab8.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Sun Nov 28 20:46:47 2021] Launched synth_1...
+Run output will be captured here: D:/109550134/LAB8/lab8_1128_2/lab8/lab8.runs/synth_1/runme.log
+[Sun Nov 28 20:46:47 2021] Launched impl_1...
+Run output will be captured here: D:/109550134/LAB8/lab8_1128_2/lab8/lab8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/109550134/LAB8/lab8_1128_2/lab8/lab8.runs/impl_1/lab8.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Sun Nov 28 20:51:07 2021] Launched impl_1...
+Run output will be captured here: D:/109550134/LAB8/lab8_1128_2/lab8/lab8.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Sun Nov 28 20:53:06 2021] Launched synth_1...
+Run output will be captured here: D:/109550134/LAB8/lab8_1128_2/lab8/lab8.runs/synth_1/runme.log
+[Sun Nov 28 20:53:06 2021] Launched impl_1...
+Run output will be captured here: D:/109550134/LAB8/lab8_1128_2/lab8/lab8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/109550134/LAB8/lab8_1128_2/lab8/lab8.runs/impl_1/lab8.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Sun Nov 28 20:56:10 2021] Launched impl_1...
+Run output will be captured here: D:/109550134/LAB8/lab8_1128_2/lab8/lab8.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Sun Nov 28 20:57:16 2021] Launched synth_1...
+Run output will be captured here: D:/109550134/LAB8/lab8_1128_2/lab8/lab8.runs/synth_1/runme.log
+[Sun Nov 28 20:57:16 2021] Launched impl_1...
+Run output will be captured here: D:/109550134/LAB8/lab8_1128_2/lab8/lab8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/109550134/LAB8/lab8_1128_2/lab8/lab8.runs/impl_1/lab8.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+reset_run impl_1 -prev_step 
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+WARNING: [Vivado 12-872] Run step 'Design Initialization' is out-of-date.
+[Sun Nov 28 21:01:47 2021] Launched impl_1...
+Run output will be captured here: D:/109550134/LAB8/lab8_1128_2/lab8/lab8.runs/impl_1/runme.log
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Sun Nov 28 21:02:43 2021] Launched synth_1...
+Run output will be captured here: D:/109550134/LAB8/lab8_1128_2/lab8/lab8.runs/synth_1/runme.log
+[Sun Nov 28 21:02:43 2021] Launched impl_1...
+Run output will be captured here: D:/109550134/LAB8/lab8_1128_2/lab8/lab8.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {D:/109550134/LAB8/lab8_1128_2/lab8/lab8.runs/impl_1/lab8.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Sun Nov 28 21:08:47 2021...

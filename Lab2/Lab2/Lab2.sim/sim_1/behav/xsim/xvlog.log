@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carrie Liang/Desktop/Lab2/Lab2.srcs/sources_1/new/mmult.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mmult
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Carrie Liang/Desktop/Lab2/Lab2.srcs/sim_1/new/mmult_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module mmult_tb
+WARNING: [VRFC 10-8361] illegal leading underscore character in based number '_4F_7E_57_0F_14_7B_21_4C_54' [C:/Users/Carrie Liang/Desktop/Lab2/Lab2.srcs/sim_1/new/mmult_tb.v:75]
+WARNING: [VRFC 10-8361] illegal leading underscore character in based number '_17_28_3A_40_2F_33_6C_22_77' [C:/Users/Carrie Liang/Desktop/Lab2/Lab2.srcs/sim_1/new/mmult_tb.v:76]

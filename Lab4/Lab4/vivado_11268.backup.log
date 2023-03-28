@@ -1,0 +1,21 @@
+#-----------------------------------------------------------
+# Vivado v2021.1 (64-bit)
+# SW Build 3247384 on Thu Jun 10 19:36:33 MDT 2021
+# IP Build 3246043 on Fri Jun 11 00:30:35 MDT 2021
+# Start of session at: Sat Oct 23 13:56:04 2021
+# Process ID: 11268
+# Current directory: D:/109550134/Lab4
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent2732 D:\109550134\Lab4\Lab4.xpr
+# Log file: D:/109550134/Lab4/vivado.log
+# Journal file: D:/109550134/Lab4\vivado.jou
+#-----------------------------------------------------------
+start_guioopen_project D:/109550134/Lab4/Lab4.xpr
+INFO: [Project 1-313] Project file moved from 'D:/Vivado/Template/Lab4' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'D:/109550134/Lab4/Lab4.gen/sources_1', nor could it be found using path 'D:/Vivado/Template/Lab4/Lab4.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.1/data/ip'.oopen_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:06 . Memory (MB): peak = 1442.762 ; gain = 0.000update_compile_order -fileset sources_1
+eexit
+INFO: [Common 17-206] Exiting Vivado at Sat Oct 23 13:57:54 2021...

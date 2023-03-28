@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.1 (64-bit)
+# SW Build 2552052 on Fri May 24 14:47:09 MDT 2019
+# IP Build 2548770 on Fri May 24 18:01:18 MDT 2019
+# Start of session at: Fri Oct 25 22:41:27 2019
+# Process ID: 10749
+# Current directory: /home/Alvinna/Desktop/lab6/lab6.sim/sim_1/synth/func/xsim
+# Command line: wbtcv -mode batch -source /home/Alvinna/Desktop/lab6/lab6.sim/sim_1/synth/func/xsim/xsim.dir/lab6_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: /home/Alvinna/Desktop/lab6/lab6.sim/sim_1/synth/func/xsim/webtalk.log
+# Journal file: /home/Alvinna/Desktop/lab6/lab6.sim/sim_1/synth/func/xsim/webtalk.jou
+#-----------------------------------------------------------
+source /home/Alvinna/Desktop/lab6/lab6.sim/sim_1/synth/func/xsim/xsim.dir/lab6_tb_func_synth/webtalk/xsim_webtalk.tcl -notrace

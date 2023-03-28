@@ -1,0 +1,8 @@
+0.6
+2019.1
+May 24 2019
+14:51:52
+/home/Alvinna/Desktop/lab6/lab6.sim/sim_1/behav/xsim/glbl.v,1558713910,verilog,,,,glbl,,,,,,,,
+/home/Alvinna/Desktop/lab6/lab6.srcs/sources_1/new/lab6.v,1572013162,verilog,,/home/Alvinna/Desktop/lab6/lab6.srcs/sources_1/new/uart.v,,lab6,,,,,,,,
+/home/Alvinna/Desktop/lab6/lab6.srcs/sources_1/new/lab6_tb.v,1572013635,verilog,,,,lab6_tb,,,,,,,,
+/home/Alvinna/Desktop/lab6/lab6.srcs/sources_1/new/uart.v,1572012231,verilog,,/home/Alvinna/Desktop/lab6/lab6.srcs/sources_1/new/lab6_tb.v,,uart,,,,,,,,

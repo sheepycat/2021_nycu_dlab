@@ -1,0 +1,4 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/大二上數電實驗/Lab1/109550134_Lab_1/109550134_Lab_1.srcs/sources_1/new/SeqMultiplier.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SeqMultiplier
+INFO: [VRFC 10-2263] Analyzing Verilog file "D:/大二上數電實驗/Lab1/109550134_Lab_1/109550134_Lab_1.srcs/sim_1/new/SeqMultiplier_tb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module SeqMultiplier_tb

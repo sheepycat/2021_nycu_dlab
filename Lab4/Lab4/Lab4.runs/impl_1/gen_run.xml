@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenRun Id="impl_1" LaunchPart="xc7a35ticsg324-1L" LaunchTime="1635004986">
+  <File Type="ROUTE-PWR" Name="lab4_power_routed.rpt"/>
+  <File Type="PA-TCL" Name="lab4.tcl"/>
+  <File Type="BITSTR-MMI" Name="lab4.mmi"/>
+  <File Type="OPT-METHODOLOGY-DRC" Name="lab4_methodology_drc_opted.rpt"/>
+  <File Type="INIT-TIMING" Name="lab4_timing_summary_init.rpt"/>
+  <File Type="ROUTE-PWR-SUM" Name="lab4_power_summary_routed.pb"/>
+  <File Type="REPORTS-TCL" Name="lab4_reports.tcl"/>
+  <File Type="OPT-TIMING" Name="lab4_timing_summary_opted.rpt"/>
+  <File Type="OPT-DCP" Name="lab4_opt.dcp"/>
+  <File Type="OPT-DRC" Name="lab4_drc_opted.rpt"/>
+  <File Type="OPT-HWDEF" Name="lab4.hwdef"/>
+  <File Type="PWROPT-DCP" Name="lab4_pwropt.dcp"/>
+  <File Type="PWROPT-DRC" Name="lab4_drc_pwropted.rpt"/>
+  <File Type="PWROPT-TIMING" Name="lab4_timing_summary_pwropted.rpt"/>
+  <File Type="PLACE-DCP" Name="lab4_placed.dcp"/>
+  <File Type="PLACE-IO" Name="lab4_io_placed.rpt"/>
+  <File Type="PLACE-CLK" Name="lab4_clock_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL" Name="lab4_utilization_placed.rpt"/>
+  <File Type="PLACE-UTIL-PB" Name="lab4_utilization_placed.pb"/>
+  <File Type="PLACE-CTRL" Name="lab4_control_sets_placed.rpt"/>
+  <File Type="PLACE-SIMILARITY" Name="lab4_incremental_reuse_placed.rpt"/>
+  <File Type="PLACE-PRE-SIMILARITY" Name="lab4_incremental_reuse_pre_placed.rpt"/>
+  <File Type="BG-BIN" Name="lab4.bin"/>
+  <File Type="PLACE-TIMING" Name="lab4_timing_summary_placed.rpt"/>
+  <File Type="POSTPLACE-PWROPT-DCP" Name="lab4_postplace_pwropt.dcp"/>
+  <File Type="BITSTR-MSK" Name="lab4.msk"/>
+  <File Type="POSTPLACE-PWROPT-TIMING" Name="lab4_timing_summary_postplace_pwropted.rpt"/>
+  <File Type="PHYSOPT-DCP" Name="lab4_physopt.dcp"/>
+  <File Type="PHYSOPT-DRC" Name="lab4_drc_physopted.rpt"/>
+  <File Type="BITSTR-RBT" Name="lab4.rbt"/>
+  <File Type="PHYSOPT-TIMING" Name="lab4_timing_summary_physopted.rpt"/>
+  <File Type="ROUTE-ERROR-DCP" Name="lab4_routed_error.dcp"/>
+  <File Type="ROUTE-DCP" Name="lab4_routed.dcp"/>
+  <File Type="ROUTE-BLACKBOX-DCP" Name="lab4_routed_bb.dcp"/>
+  <File Type="ROUTE-DRC" Name="lab4_drc_routed.rpt"/>
+  <File Type="ROUTE-DRC-PB" Name="lab4_drc_routed.pb"/>
+  <File Type="ROUTE-DRC-RPX" Name="lab4_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC" Name="lab4_methodology_drc_routed.rpt"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-RPX" Name="lab4_methodology_drc_routed.rpx"/>
+  <File Type="ROUTE-METHODOLOGY-DRC-PB" Name="lab4_methodology_drc_routed.pb"/>
+  <File Type="ROUTE-PWR-RPX" Name="lab4_power_routed.rpx"/>
+  <File Type="ROUTE-STATUS" Name="lab4_route_status.rpt"/>
+  <File Type="ROUTE-STATUS-PB" Name="lab4_route_status.pb"/>
+  <File Type="ROUTE-TIMINGSUMMARY" Name="lab4_timing_summary_routed.rpt"/>
+  <File Type="ROUTE-TIMING-PB" Name="lab4_timing_summary_routed.pb"/>
+  <File Type="ROUTE-TIMING-RPX" Name="lab4_timing_summary_routed.rpx"/>
+  <File Type="ROUTE-SIMILARITY" Name="lab4_incremental_reuse_routed.rpt"/>
+  <File Type="ROUTE-CLK" Name="lab4_clock_utilization_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW" Name="lab4_bus_skew_routed.rpt"/>
+  <File Type="ROUTE-BUS-SKEW-PB" Name="lab4_bus_skew_routed.pb"/>
+  <File Type="ROUTE-BUS-SKEW-RPX" Name="lab4_bus_skew_routed.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-DCP" Name="lab4_postroute_physopt.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-BLACKBOX-DCP" Name="lab4_postroute_physopt_bb.dcp"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING" Name="lab4_timing_summary_postroute_physopted.rpt"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-PB" Name="lab4_timing_summary_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-TIMING-RPX" Name="lab4_timing_summary_postroute_physopted.rpx"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW" Name="lab4_bus_skew_postroute_physopted.rpt"/>
+  <File Type="BG-BIT" Name="lab4.bit"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-PB" Name="lab4_bus_skew_postroute_physopted.pb"/>
+  <File Type="POSTROUTE-PHYSOPT-BUS-SKEW-RPX" Name="lab4_bus_skew_postroute_physopted.rpx"/>
+  <File Type="BITSTR-NKY" Name="lab4.nky"/>
+  <File Type="BITSTR-BMM" Name="lab4_bd.bmm"/>
+  <File Type="PDI-FILE" Name="lab4.pdi"/>
+  <File Type="RCFI_FILE" Name="lab4.rcfi"/>
+  <File Type="CFI_FILE" Name="lab4.cfi"/>
+  <File Type="RNPI_FILE" Name="lab4.rnpi"/>
+  <File Type="NPI_FILE" Name="lab4.npi"/>
+  <File Type="RBD_FILE" Name="lab4.rbd"/>
+  <File Type="BITSTR-LTX" Name="debug_nets.ltx"/>
+  <File Type="BITSTR-LTX" Name="lab4.ltx"/>
+  <File Type="BITSTR-SYSDEF" Name="lab4.sysdef"/>
+  <File Type="BG-BGN" Name="lab4.bgn"/>
+  <File Type="BG-DRC" Name="lab4.drc"/>
+  <File Type="RDI-RDI" Name="lab4.vdi"/>
+  <File Type="WBT-USG" Name="usage_statistics_webtalk.html"/>
+  <FileSet Name="sources" Type="DesignSrcs" RelSrcDir="$PSRCDIR/sources_1" RelGenDir="$PGENDIR/sources_1">
+    <Filter Type="Srcs"/>
+    <File Path="$PSRCDIR/sources_1/new/lab4.v">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+        <Attr Name="UsedIn" Val="simulation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="DesignMode" Val="RTL"/>
+      <Option Name="TopModule" Val="lab4"/>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="constrs_in" Type="Constrs" RelSrcDir="$PSRCDIR/constrs_1">
+    <Filter Type="Constrs"/>
+    <File Path="$PSRCDIR/constrs_1/new/arty_base.xdc">
+      <FileInfo>
+        <Attr Name="UsedIn" Val="synthesis"/>
+        <Attr Name="UsedIn" Val="implementation"/>
+      </FileInfo>
+    </File>
+    <Config>
+      <Option Name="ConstrsType" Val="XDC"/>
+    </Config>
+  </FileSet>
+  <FileSet Name="utils" Type="Utils" RelSrcDir="$PSRCDIR/utils_1">
+    <Filter Type="Utils"/>
+    <Config>
+      <Option Name="TopAutoSet" Val="TRUE"/>
+    </Config>
+  </FileSet>
+  <Strategy Version="1" Minor="2">
+    <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2021"/>
+    <Step Id="init_design"/>
+    <Step Id="opt_design"/>
+    <Step Id="power_opt_design"/>
+    <Step Id="place_design"/>
+    <Step Id="post_place_power_opt_design"/>
+    <Step Id="phys_opt_design"/>
+    <Step Id="route_design"/>
+    <Step Id="post_route_phys_opt_design"/>
+    <Step Id="write_bitstream"/>
+  </Strategy>
+</GenRun>

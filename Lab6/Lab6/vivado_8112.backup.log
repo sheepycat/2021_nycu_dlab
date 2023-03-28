@@ -1,0 +1,39 @@
+#-----------------------------------------------------------
+# Vivado v2020.1 (64-bit)
+# SW Build 2902540 on Wed May 27 19:54:49 MDT 2020
+# IP Build 2902112 on Wed May 27 22:43:36 MDT 2020
+# Start of session at: Mon Nov  2 17:09:03 2020
+# Process ID: 8112
+# Current directory: C:/Users/Shlab26/Downloads/lab6
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent1132 C:\Users\Shlab26\Downloads\lab6\lab6.xpr
+# Log file: C:/Users/Shlab26/Downloads/lab6/vivado.log
+# Journal file: C:/Users/Shlab26/Downloads/lab6\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Shlab26/Downloads/lab6/lab6.xpr
+INFO: [Project 1-313] Project file moved from '/home/Alvinna/Desktop/lab6' since last save.
+Scanning sources...
+Finished scanning sources
+INFO: [Project 1-230] Project 'lab6.xpr' upgraded for this version of Vivado.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.1/data/ip'.
+open_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 1013.527 ; gain = 0.000
+update_compile_order -fileset sources_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Mon Nov  2 17:09:47 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Shlab26/Downloads/lab6/lab6.runs/impl_1/runme.log
+set_property is_enabled false [get_files  C:/Users/Shlab26/Downloads/lab6/lab6.srcs/sources_1/new/lab6_tb.v]
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs impl_1 -to_step write_bitstream -jobs 3
+[Mon Nov  2 17:13:30 2020] Launched synth_1...
+Run output will be captured here: C:/Users/Shlab26/Downloads/lab6/lab6.runs/synth_1/runme.log
+[Mon Nov  2 17:13:30 2020] Launched impl_1...
+Run output will be captured here: C:/Users/Shlab26/Downloads/lab6/lab6.runs/impl_1/runme.log
+move_files -fileset sim_1 [get_files  C:/Users/Shlab26/Downloads/lab6/lab6.srcs/sources_1/new/lab6_tb.v]
+set_property is_enabled true [get_files  C:/Users/Shlab26/Downloads/lab6/lab6.srcs/sources_1/new/lab6_tb.v]
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Nov  2 17:16:44 2020...
